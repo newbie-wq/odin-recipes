@@ -1,0 +1,163 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&family=Roboto:wght@400;500;700&display=swap');
+
+* {
+    font-family: 'poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    transition: linear .2s;
+}
+
+html {
+    font-size: 85%;
+}
+
+body {
+    background-color: aliceblue;
+}
+
+p {
+    color: #333;
+}
+
+h3 {
+    text-transform: capitalize;
+}
+
+img {
+    border-radius: .5rem;
+}
+
+header {
+    margin: 1rem 3rem;
+    display: flex;
+    align-items: center;
+    font-size: 1rem;
+}
+
+header img{
+    height: 2.5rem;
+}
+
+header h1 span {
+    color: blue;
+}
+
+main {
+    padding: 0 3rem;
+}
+
+main h1{
+    text-align: center;
+    font-size: 3.5rem;
+    font-family: 'roboto', sans-serif;
+}
+
+section.after {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 10rem;
+    margin: 1rem 2.5rem;
+    gap: 2.5rem;
+    flex-wrap: wrap;
+    font-size: large;
+}
+
+section.after img {
+    height: 20rem;
+}
+
+section.after p {
+    flex-basis: 40rem;
+}
+
+.foods {
+    display: flex;
+    justify-content: center;
+    gap: 1.5rem;
+    flex-wrap: wrap;
+
+}
+
+.foods .food {
+    position: relative;
+    width: 22rem;
+    padding: 1rem;
+    border-radius: .5rem;
+    background: linear-gradient(to right bottom, rgba(255, 255, 255, .3), rgba(255, 255, 255, .8));
+    border: 2px solid lightblue;
+    text-align: center;
+}
+
+.foods .food img {
+    width: 100%;
+    height: 15rem;
+    border-radius: .5rem;
+}
+
+.foods .food a {
+    text-decoration: none;
+    color: blue;
+}
+
+.foods .food a:hover {
+    cursor: pointer;
+    color: lightblue;
+}
+
+.foods .food > p {
+    margin: .5rem;
+    font-size: medium;
+}
+
+
+.food .beside {
+    margin: .5rem 1rem;
+    display: flex;
+    justify-content: space-between;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/* media query begins here */
+@media (max-width: 768px) {
+    html {
+        font-size: 75%;
+    }
+
+    section.after {
+        padding: 0;
+        gap: 1.5rem;
+        font-size: medium;
+    }
+
+    section.after p {
+        flex-basis: 30rem;
+    }
+}
+
+@media (max-width: 375px) {
+    
+    header {
+        margin: 1rem 1rem;
+    }
+
+    main {
+        padding: 0 1rem;
+    }
+
+    section.after {
+        padding: 0 1rem;
+        font-size: small;
+    }
+}

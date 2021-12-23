@@ -1,0 +1,83 @@
+* {
+    font-size: large;
+}
+
+main > h1 {
+    margin-bottom: 3rem;
+
+}
+
+.short-details {
+    display: flex;
+    /* justify-content: center; */
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 2.5rem;
+    border-radius: .5rem;
+    border: 2px solid lightblue;
+    margin-bottom: 1rem;
+}
+
+.short-details img {
+    width: auto;
+    height: 400px;
+}
+
+
+.nutrition-info .line {
+    display: flex;
+    /* justify-content: space-around; */
+    align-items: center;
+    gap: 1.2rem;
+    font-size: larger;
+    margin: 2rem 1rem;
+}
+
+main > h3 {
+    text-align: center;
+}
+
+section {
+    margin: .5rem 2rem;
+}
+
+section h2 {
+    color: blue;
+}
+
+li {
+    margin-bottom: .5rem;
+}
+
+
+
+
+@media (max-width: 768px) {
+    * {
+        font-size: medium;
+    }
+
+
+    .nutrition-info .line {
+        display: inline-flex;
+    }
+
+}
+
+@media (max-width: 450px) {
+    html {
+        font-size: 70%;
+    }
+
+    * {
+        font-size: small;
+    }
+
+    .short-details {
+        display: block;
+    }
+
+    .short-details img {
+        flex-basis: 30rem;
+    }
+}
