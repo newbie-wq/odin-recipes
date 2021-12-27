@@ -154,6 +154,12 @@ section.after p {
     }
 }
 
+@media (max-width: 450px) {
+    header {
+        margin: 1rem .5rem;
+    }
+}
+
 @media (max-width: 375px) {
     html {
         font-size: 70%;

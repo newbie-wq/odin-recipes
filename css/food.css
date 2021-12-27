@@ -21,7 +21,6 @@ main p, main li {
 }
 .short-details {
     display: flex;
-    /* justify-content: center; */
     align-items: center;
     flex-wrap: wrap;
     gap: 2.5rem;
@@ -69,6 +68,14 @@ li {
         font-size: medium;
     }
 
+    .short-details {
+        width: 100%;
+    }
+
+    .short-details img {
+        width: 100%;
+    }
+
     main {
         margin: 0;
     }
@@ -88,11 +95,20 @@ li {
         font-size: small;
     }
 
+    main > h1 {
+        margin-bottom: 2rem;
+    }    
+
     .short-details {
         display: block;
     }
 
     .short-details img {
         flex-basis: 30rem;
+    }
+
+    section {
+        margin: .5rem 0rem;
+        margin-left: 1rem;
     }
 }
