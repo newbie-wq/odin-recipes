@@ -126,7 +126,12 @@ section.after p {
     justify-content: space-between;
 }
 
-
+footer {
+    background-color: lightblue;
+    margin-top: 2rem;
+    text-align: center;
+    padding: .3rem;
+}
 
 
 
