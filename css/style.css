@@ -18,6 +18,7 @@ body {
 
 p {
     color: #333;
+    font-family: 'roboto', sans-serif;
 }
 
 h3 {
@@ -32,14 +33,21 @@ header {
     margin: 1rem 3rem;
     display: flex;
     align-items: center;
-    font-size: 1rem;
+    font-size: .8rem;
 }
 
 header img{
     height: 2.5rem;
 }
 
-header h1 span {
+header a {
+    color: #333;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+}
+
+header a h1 span {
     color: blue;
 }
 
@@ -147,7 +155,9 @@ section.after p {
 }
 
 @media (max-width: 375px) {
-    
+    html {
+        font-size: 70%;
+    }
     header {
         margin: 1rem 1rem;
     }

@@ -1,12 +1,24 @@
-* {
+*:not(header) {
+    box-sizing: border-box;
+}
+
+main p, main h2, main li {
     font-size: large;
+}
+
+main {
+    max-width: 100%;
+    margin: 0 10rem;
 }
 
 main > h1 {
     margin-bottom: 3rem;
-
 }
 
+main p, main li {
+    font-family: 'roboto', sans-serif;
+    
+}
 .short-details {
     display: flex;
     /* justify-content: center; */
@@ -19,8 +31,8 @@ main > h1 {
 }
 
 .short-details img {
-    width: auto;
-    height: 400px;
+    /* height: 100%; */
+    width: 50rem;
 }
 
 
@@ -57,6 +69,9 @@ li {
         font-size: medium;
     }
 
+    main {
+        margin: 0;
+    }
 
     .nutrition-info .line {
         display: inline-flex;
